@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD3E18C8179E506AAF0B14C1 /* libPods-SVPullToRefreshTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EDF2BD75FAB29B56FF1B4C5 /* libPods-SVPullToRefreshTest.a */; };
 		F4A20BAF1D504F760080CB21 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A20BAE1D504F760080CB21 /* main.m */; };
 		F4A20BB21D504F760080CB21 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A20BB11D504F760080CB21 /* AppDelegate.m */; };
 		F4A20BB51D504F760080CB21 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A20BB41D504F760080CB21 /* ViewController.m */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5EDF2BD75FAB29B56FF1B4C5 /* libPods-SVPullToRefreshTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SVPullToRefreshTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		748F2D4A117DDE0A1D571F6D /* Pods-SVPullToRefreshTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SVPullToRefreshTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SVPullToRefreshTest/Pods-SVPullToRefreshTest.debug.xcconfig"; sourceTree = "<group>"; };
+		98B066EA14F4D898C7F08712 /* Pods-SVPullToRefreshTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SVPullToRefreshTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-SVPullToRefreshTest/Pods-SVPullToRefreshTest.release.xcconfig"; sourceTree = "<group>"; };
 		F4A20BAA1D504F760080CB21 /* SVPullToRefreshTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SVPullToRefreshTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4A20BAE1D504F760080CB21 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F4A20BB01D504F760080CB21 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD3E18C8179E506AAF0B14C1 /* libPods-SVPullToRefreshTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A276C8E13C5E9610AF0FFCB4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				748F2D4A117DDE0A1D571F6D /* Pods-SVPullToRefreshTest.debug.xcconfig */,
+				98B066EA14F4D898C7F08712 /* Pods-SVPullToRefreshTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EECCC03CD9281F5D39DD3E8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5EDF2BD75FAB29B56FF1B4C5 /* libPods-SVPullToRefreshTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F4A20BA11D504F760080CB21 = {
 			isa = PBXGroup;
 			children = (
 				F4A20BAC1D504F760080CB21 /* SVPullToRefreshTest */,
 				F4A20BAB1D504F760080CB21 /* Products */,
+				A276C8E13C5E9610AF0FFCB4 /* Pods */,
+				EECCC03CD9281F5D39DD3E8D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4A20BC11D504F760080CB21 /* Build configuration list for PBXNativeTarget "SVPullToRefreshTest" */;
 			buildPhases = (
+				AD35D7F25770CA2BCFE14AE1 /* [CP] Check Pods Manifest.lock */,
 				F4A20BA61D504F760080CB21 /* Sources */,
 				F4A20BA71D504F760080CB21 /* Frameworks */,
 				F4A20BA81D504F760080CB21 /* Resources */,
+				797EF7A53FFDF2AA83737F4F /* [CP] Embed Pods Frameworks */,
+				5F249B38184E5DC9D5F99C47 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -142,6 +169,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5F249B38184E5DC9D5F99C47 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SVPullToRefreshTest/Pods-SVPullToRefreshTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		797EF7A53FFDF2AA83737F4F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SVPullToRefreshTest/Pods-SVPullToRefreshTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD35D7F25770CA2BCFE14AE1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F4A20BA61D504F760080CB21 /* Sources */ = {
@@ -260,6 +335,7 @@
 		};
 		F4A20BC21D504F760080CB21 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 748F2D4A117DDE0A1D571F6D /* Pods-SVPullToRefreshTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SVPullToRefreshTest/Info.plist;
@@ -271,6 +347,7 @@
 		};
 		F4A20BC31D504F760080CB21 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98B066EA14F4D898C7F08712 /* Pods-SVPullToRefreshTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SVPullToRefreshTest/Info.plist;
@@ -299,6 +376,7 @@
 				F4A20BC31D504F760080CB21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
